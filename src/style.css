@@ -1,0 +1,121 @@
+:root {
+  --h1-font-size: 93px;
+  --h2-font-size: 53px;
+  --h3-font-size: 23px;
+  --h3-color: rgb(110, 110, 110);
+  --principal-color: green;
+  --secondary-color: white;
+  --tertiary-color: #f5f2fe;
+  --links-border-radius: 5px;
+  --links-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+/*Homepage CSS*/
+body {
+  margin-top: 100px;
+}
+
+h1 {
+  font-size: var(--h1-font-size);
+}
+
+h2 {
+  font-size: var(--h2-font-size);
+}
+
+h3 {
+  font-size: var(--h3-font-size);
+  color: var(--h3-color);
+}
+
+.homepage-links {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.contact-link {
+  color: var(--secondary-color);
+  background: var(--principal-color);
+  text-decoration: none;
+  padding: 15px;
+  margin: 15px;
+  border-radius: var(--links-border-radius);
+  box-shadow: var(--links-box-shadow);
+}
+
+.contact-link:hover {
+  color: var(--secondary-color);
+}
+
+.about-link {
+  color: var(--principal-color);
+  background: var(--secondary-color);
+  text-decoration: none;
+  padding: 15px;
+  margin: 15px;
+  border-radius: var(--links-border-radius);
+  box-shadow: var(--links-box-shadow);
+}
+
+.about-link:hover {
+  color: var(--principal-color);
+}
+
+.yoga-link,
+.weather-link,
+.yogurt-link {
+  color: var(--secondary-color);
+  background: var(--principal-color);
+  text-decoration: none;
+  padding: 15px;
+  border-radius: var(--links-border-radius);
+  box-shadow: var(--links-box-shadow);
+}
+
+.yoga-link:hover,
+.weather-link:hover,
+.yogurt-link:hover {
+  color: var(--secondary-color);
+}
+
+/*About Page CSS*/
+.about-content {
+  padding: 0 5px;
+  margin: 30px 10px;
+}
+
+.email-link {
+  color: var(--principal-color);
+  font-size: var(--h3-font-size);
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
+/*Media Queries*/
+@media (max-width: 576px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .yoga-link,
+  .weather-link,
+  .yogurt-link {
+    display: block;
+    text-align: center;
+    margin: 0 18px;
+  }
+}
